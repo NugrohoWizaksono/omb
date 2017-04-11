@@ -1,6 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
+<!--    Start of Zendesk Chat Script-->
+
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?4et46ad01OVgpd3U2fAtgqc7BDNDkU1S";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    
+    <!--End of Zendesk Chat Script-->
+    
+    
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="image/logo [2].png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -405,6 +418,16 @@
             </div>
         </div>
     </div>
+    <!--Talent Seeker-->
+    <div class="white" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center font-medium merah-api">
+                    <h4>Talent Seeker</h4>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--creasi apps-->
     <div id="apps" class="grey lighten-4 scrollspy" style="padding: 50px 0">
         <div class="container">
@@ -433,35 +456,6 @@
                     
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Sponsor-->
-    <div class="white" style="padding: 0.5px 0">
-        <div class="container">
-            <div class="row valign-wrapper">
-                
-<!--                <div class="col s12 m6 l6 center font-medium">
-                    <h5>SPONSORED BY</h5>
-                    <a target="_blank" href="http://www.gramedia.com/"><img width="130px" src="image/gramedia.png" alt=""/></a>
-                    <a class="padding-k-10" target="_blank" href="https://tees.co.id/"><img width="130px" src="image/tees.png" alt="" /></a>
-                    <a class="padding-k-10" target="_blank" href="https://www.sepulsa.com/"><img width="140px" src="image/sepulsa.png" alt="" /></a>
-                </div>                
-                <div class="col s12 m6 l6 center font-medium">
-                    <h5>MEDIA PARTNERS</h5>
-                        <a target="_blank" href="http://karambaart.com/"><img width="90px" src="image/karamba.png" alt="" /></a>
-                        <a class="padding-k-10" target="_blank" href="http://www.infodkv.com/"><img  width="70px" src="image/info dkv.png" alt="" /></a>
-                        <a class="padding-k-10" target="_blank" href="http://dkv-daily.com/"><img  width="140px" src="image/dkv daily.png" alt="" /></a>
-                        <a class="padding-k-10" target="_blank" href="http://adgi.or.id/"><img  width="70px" src="image/adgi.png" alt="" /></a>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 20px;">
-                <div class="col s12 center font-medium">
-                    
-                </div>
-                <div class="col s12 font-medium center">
-                    
-                </div>
-            </div>-->
         </div>
     </div>
     <!--footer-->
