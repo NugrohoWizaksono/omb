@@ -46,8 +46,21 @@
         <li><a href="#steps" style="font-size: 20px; padding-left: 30px;">STEPS</a></li>
         <li><a href="#luck" style="font-size: 20px; padding-left: 30px;">LUCKY PRIZES</a></li>
         <li><a href="#tips" style="font-size: 20px; padding-left: 30px;">TIPS</a></li>
-        <li><a href="#apps" style="font-size: 20px; padding-left: 30px;">APP</a></li>
+        <li><a href="#apps" style="font-size: 20px; padding-left: 30px;">APP</a></li>        
+        <li><a href="#TS" style="font-size: 20px; padding-left: 30px;">Talent Seeker</a></li>
     </ul>
+    
+    <!-- Modal Structure -->
+    <div id="TS" class="modal">
+        <div class="modal-content font-medium center">
+            <h4 class="red-text">Talent Seeker</h4><br />
+            <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB berlangsung pada tanggal 1 – 31 Mei 2017. 
+              Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat black-text">Close</a>
+        </div>
+    </div>
     <div class="navbar-fixed">
         <!--<nav style="background-color: rgba(0, 0, 5, 0.3) !important;">-->
         <nav>
@@ -64,12 +77,15 @@
                         <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
                         <li><a href="#tips" class="black-text">TIPS</a></li>
                         <li><a href="#apps" class="black-text">APP</a></li>
-                        <li></li>
+                        <li > <!-- Modal Trigger -->
+                            <a class="red" href="#TS">Talent Seeker</a>
+                        </li>
                     </ul>                        
                 </div>
             </div>
         </nav>
     </div>
+    
     <div class="white margin-bottom-0 padding-bottom-0"  style="margin-bottom: -5px; background: url('slider/bgPattern.png') repeat">
         <div class="row margin-bottom-0 center">
             <div class="col s12" style="padding-top: 10px">
@@ -430,6 +446,7 @@
                 <div class="col s12 center font-medium">
                     <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB 
                         berlangsung pada tanggal 1 – 31 Mei 2017. Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
+                    
                 </div>
             </div>
         </div>
@@ -525,6 +542,10 @@
   </script>
   <script type="text/javascript">
   $(document).ready(function(){
+        $('.modal').modal({
+            dismissible: false
+        });
+      
         $('.owl-carousel').owlCarousel({
             margin:20,
             autoWidth:true,
