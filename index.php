@@ -426,6 +426,12 @@
                     <h4>Talent Seeker</h4>
                 </div>
             </div>
+            <div class="row">
+                <div class="col s12 center font-medium">
+                    <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB 
+                        berlangsung pada tanggal 1 – 31 Mei 2017. Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
+                </div>
+            </div>
         </div>
     </div>
     <!--creasi apps-->
@@ -458,8 +464,25 @@
             </div>
         </div>
     </div>
+    <!--Campus partner-->
+    <div class="white" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center merah-api font-medium">
+                    <h5>KAMPUS</h5>
+                </div>
+            </div>
+            <div class="row margin-bottom-0 ">
+                <div class="col s12 center font-medium">
+                    <a class="" href=""><img src="image/HMFSD UMN.png" alt="" width="75px" /></a>
+                    <a class="padding-k-10" href=""><img src="image/uph.png" alt="" width="50px" /></a>
+                    <a class="padding-k-10" href=""><img src="image/Logo-DKV-YAI.png" alt="" width="80px" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--footer-->
-    <footer class="page-footer"style="background:url('image/abstrak.png')  top repeat;">
+    <footer class="page-footer"style="background:url('image/abstrak1.png')  top repeat;">
         <div class="container">
             <div class="row">
                 <div class="col s12 center-align font-medium">
