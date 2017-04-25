@@ -1,69 +1,584 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap-grid.css" /><!--Import Google Icon Font-->
+<!--    Start of Zendesk Chat Script-->
+
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?4et46ad01OVgpd3U2fAtgqc7BDNDkU1S";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    
+    <!--End of Zendesk Chat Script-->
+    
+    
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="image/logo [2].png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.css" />
-    <title></title>
+    <!--Import materialize.css-->
+    
+<!--    <link rel="stylesheet" href="css/flexboxgrid.css" />-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/nostyle.css"   media="screen,projection"/>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="Creasi - Websitenya orang Kreatif mencari loker kerja : Creative Graphic Designer, Web Design, Visual Designer,  Desain Komunikasi Visual (DKV). " />
+    <meta property="og:title" content="Creasi Online Magang Berhadiah" />
+    <meta property="og:description" content="Online Job Fair khusus lowker magang dibidang kreatif" />
+    <meta property="og:url" content="http://omb.creasi.co.id/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://omb.creasi.co.id/image/slide-tranparan1.png" />
+    <title>Online Magang Berhadiah | Creasi.co.id</title>
 </head>
 <body>
-    <ul id="slide-out" class="side-nav">
-        <li>
-            <div class="userView">
-                <div class="background">
-                  <img src="http://materializecss.com/images/office.jpg">
-                </div>
-                <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
-                <a href="#!name"><span class="white-text name">John Doe</span></a>
-                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-            </div>
-        </li>
-        <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header"><i class="material-icons right">arrow_drop_down</i>Dropdown</a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="#!">First</a></li>
-                <li><a href="#!">Second</a></li>
-                <li><a href="#!">Third</a></li>
-                <li><a href="#!">Fourth</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    <!--    sidenav-->
+    <ul class="side-nav" id="mobile-menu" style="background: url('image/abstrak.png') #f5f5f5 repeat">
+        <li style="padding: 0 10px;"><img class="responsive-img" src="image/logo [2].png" alt="" /></li>
+        <li><a href="#apaomb" style="font-size: 20px; padding-left: 30px;">ABOUT</a></li>
+        <li><a href="#goals" style="font-size: 20px; padding-left: 30px;">GOALS</a></li>
+        <li><a href="#steps" style="font-size: 20px; padding-left: 30px;">STEPS</a></li>
+        <li><a href="#luck" style="font-size: 20px; padding-left: 30px;">LUCKY PRIZES</a></li>
+        <li><a href="#tips" style="font-size: 20px; padding-left: 30px;">TIPS</a></li>
+        <li><a href="#apps" style="font-size: 20px; padding-left: 30px;">APP</a></li>        
+        <li><a href="#TS" style="font-size: 20px; padding-left: 30px;">Talent Seeker</a></li>
     </ul>
     
-    <nav>
-        <div class="nav-wrapper white">
-            <a href="#" class="brand-logo black-text center">Nugroho Wizaksono</a>
-            <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons black-text">menu</i></a>
+    <!-- Modal Structure -->
+    <div id="TS" class="modal">
+        <div class="modal-content font-medium center">
+            <h4 class="red-text">Talent Seeker</h4><br />
+            <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB berlangsung pada tanggal 1 – 31 Mei 2017. 
+              Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
         </div>
-    </nav>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat black-text">Close</a>
+        </div>
+    </div>
+    <div class="navbar-fixed">
+        <!--<nav style="background-color: rgba(0, 0, 5, 0.3) !important;">-->
+        <nav>
+            <div class="nav-wrapper white">
+                <div class="container">
+                    <a href="#" class="brand-logo black-text font-mediumItalic"><img height="55px" src="image/logo [2].png" alt="" /></a>
+                    <a href="#" data-activates="mobile-menu" class="button-collapse">
+                        <i class="black-text material-icons">menu</i>
+                    </a>       
+                    <ul class="right hide-on-med-and-down center">
+                        <li><a href="#apaomb" class="black-text">ABOUT</a></li>
+                        <li><a href="#steps" class="black-text">STEPS</a></li>
+                        <li><a href="#apply" class="black-text">APPLY</a></li>
+                        <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
+                        <li><a href="#tips" class="black-text">TIPS</a></li>
+                        <li><a href="#apps" class="black-text">APP</a></li>
+                        <li > <!-- Modal Trigger -->
+                            <a class="red" href="#TS">Talent Seeker</a>
+                        </li>
+                    </ul>                        
+                </div>
+            </div>
+        </nav>
+    </div>
     
-    
-    
-<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" ></script>
-<script src="js/materialize.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" type="text/javascript" ></script>
-<script src="js/bootstrap.min.js" type="text/javascript" ></script>
+    <div class="white margin-bottom-0 padding-bottom-0"  style="margin-bottom: -5px; background: url('slider/bgPattern.png') repeat">
+        <div class="row margin-bottom-0 center">
+            <div class="col s12" style="padding-top: 10px">
+                <img class="responsive-img bD" src="image/slide-tranparan.png" alt="" />
+                <img class="responsive-img bM" src="image/slide mobile.JPG" alt="" />           
+            </div>
+<!--            <div class="col s12 m12 l12 center">
+                <img class="responsive-img" src="slider/creasi.png" alt="" />
+            </div>
+            <div class="col s12 m12 l12 center margin-top-k90">
+                <img class="responsive-img" src="slider/logo omb.png" alt="" />
+            </div>            
+            <div class="col s12 m12 l12 center margin-top-k60">
+                <img class="responsive-img" src="slider/online jobfair khusus magang.png" alt="" />
+            </div>             
+            <div class="col s12 m12 l12 margin-top-k350">
+                <div class="col s4 m6 l6 left-align offset-s1">
+                    <div class="col s12">
+                        <img class="responsive-img" src="slider/khusus untuk mahasiswa.png" alt="" />
+                    </div>
+                </div>
+                <div class="col s4 m6 l6 right-align offset-s1">
+                    <div class="col s12">
+                        <img class="responsive-img" src="slider/periode.png" alt="" />
+                    </div>
+                </div>            
+                <div class="col s12 m12 l12 center margin-top-k60">
+                    <img class="responsive-img" src="slider/dan menangkan total hadiah.png" alt="" />
+                </div>
+                <div class="col s4 m6 l6 left-align offset-s1">
+                    <div class="col s12 margin-top-k100">
+                        <img class="responsive-img" src="slider/bori.png" alt="" />
+                    </div>
+                </div>   
+                <div class="col s4 m6 l6 right-align offset-s1">
+                    <div class="col s12 margin-top-k100">
+                        <img class="responsive-img" src="slider/dea.png" alt="" />
+                    </div>    
+                </div>
+            </div>
+            <div class="col s12 margin-top-k60 left-align">
+                <img class="responsive-img" src="slider/sponsor.png" alt="" />
+            </div>      
+            <div class="col s12 margin-top-k60 right-align">
+                <img class="responsive-img" src="slider/sosmed.png" alt="" />
+            </div>-->
+        </div>        
+    </div>
+    <!--apa omb-->
+    <div id="apaomb" class=" scrollspy" style="padding: 50px 0; background: url('image/') top repeat; background-color: #fdba23;">
+        <div class="container">
+            <div class="row ">                
+                <div class="col s12 center font-medium merah-api" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="600">
+                    <h4>APA ITU OMB?</h4>
+                </div>
+                <div class="col s12 font-medium center" data-aos="fade-out" data-aos-offset="130" data-aos-easing="ease-in-out-sine" data-aos-duration="600">
+                    <p>Online Job Fair khusus lowker magang pertama di Indonesia yang diselenggarakan 
+                        oleh <b class="merah-api">Creasi.co.id</b> dengan 200+ lowker untuk kamu mahasiswa/i 
+                        jurusan DKV dan Ilmu Komunikasi. Perbesar peluang kamu untuk diterima magang oleh 
+                        perusahaan – perusahaan keren di beberapa kota besar di Indonesia (khususnya Jakarta). 
+                        Selain itu, kamu juga berkesempatan memenangkan hadiah voucher dengan total nilai lebih dari Rp 4.000.000,- 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--goals-->
+    <div id="goals" class="parallax-container scrollspy" style="padding: 80px 0">
+        <div class="parallax grey lighten-5"><img  src="image/paralax1.jpg" alt=""/></div>
+        <div class="container">
+<!--            <div class="row">
+                <div class="col s12 center font-mediumItalic red-text">
+                    <h4>GOALS</h4>
+                </div>
+            </div>-->
+            <div class="row">
+                <div class="col s12 m4 l4 center">
+                    <div class="row font-medium">
+                        <div class="col s12">
+                            <h4><span class="counter" data-counter-time="2000" data-counter-delay="10">40</span>+</h4>
+                        </div>
+                        <div class="col s12">
+                            Kampus
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4 center">
+                    <div class="row font-medium">
+                        <div class="col s12">
+                            <h4><span class="counter" data-counter-time="4000" data-counter-delay="10">8000</span>+</h4>
+                        </div>
+                        <div class="col s12">
+                            Pekerja Kreatif
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4 center">
+                    <div class="row font-medium">
+                        <div class="col s12">
+                            <h4><span class="counter" data-counter-time="2500" data-counter-delay="10">200</span>+</h4>
+                        </div>
+                        <div class="col s12">
+                            Lowongan Kerja
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cara ikutan-->
+    <div id="steps" class="white scrollspy" style="padding: 50px 0; background: url('') top repeat">    
+        <div class="container">
+            <div class="row margin-bottom-0">                
+                <div class="col s12 center font-medium">
+                    <h4 class=" merah-api">Cara Ikutan OMB</h4>
+                </div>
+                <div class="col s12 m4 l4 center " style="" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="600">
+                    <h5>1</h5>
+                    <img class="" src="image/signup.png" alt=""  height="250px"/>
+                    <p>Sign up/Login di <a class="merah-api" href="https://www.creasi.co.id" target="_blank">www.creasi.co.id</a></p>
+                </div>
+                <div class="col s12 m4 l4 center" style="" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="1000">
+                    <h5>2</h5>
+                    <img class="" src="image/uploading.png" alt=""  height="250px"/>
+                    <p>Upload CV terbaru kamu</p>
+                </div>
+                <div class="col s12 m4 l4 center" style="" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">
+                    <h5>3</h5>
+                    <img class="" src="image/JOB.png" alt=""  height="250px"/>
+                    <p>Lamar lowker magang yang bertanda OMB di www.creasi.co.id/jobboard</p>
+                </div>
+<!--                <div class="col s6 m4 l4 offset-l2 offset-m2 center" style="padding-top: 30px;" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="300">
+                    <img class="" src="image/tunggu-interview.png" alt="" height="150px" /><br />
+                        <p>Tunggu panggilan interview</p>
+                </div>
+                <div class="col s6 m4 l4 center" style="padding-top: 30px;" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="400">
+                    <img class="" src="image/follow-sosmed.png" alt=""  height="150px"/><br />
+                        <p>Wajib mem-follow sosmed Creasi</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!--count down-->
+    <div id="apply" class="grey lighten-4 scrollspy" style="padding: 100px 0; background: url('image/pattern.png') top repeat">
+        <div class="container">
+<!--            <div class="row center">
+                <div class="col s12 font-mediumItalic red-text">
+                    <h4>COUNT DOWN</h4>
+                </div>
+            </div>-->
+            <div class="row center" id="tanggal">
+                <!--days-->
+                <div class="col s12 m3 l3">
+                    <div class="row">
+                        <div class="col s12 font-medium merah-api">
+                            <h1><div id="hari"></div></h1>
+                        </div>
+                        <div class="col s12">
+                            DAYS
+                        </div>
+                    </div>
+                </div>
+                <!--hours-->
+                <div class="col s12 m3 l3">
+                    <div class="row">
+                        <div class="col s12 font-medium green-text darken-3 ">
+                            <h1><div id="jam"></div></h1>
+                        </div>
+                        <div class="col s12">
+                            HOURS
+                        </div>
+                    </div>
+                </div>
+                <!--MINUTES-->
+                <div class="col s12 m3 l3">
+                    <div class="row">
+                        <div class="col s12 font-medium orange-text">
+                            <h1><div id="menit"></div></h1>
+                        </div>
+                        <div class="col s12">
+                            MINUTES
+                        </div>
+                    </div>
+                </div>
+                <!--SECONDS-->
+                <div class="col s12 m3 l3">
+                    <div class="row">
+                        <div class="col s12 font-medium indigo-text">
+                            <h1><div id="detik"></div></h1>
+                        </div>
+                        <div class="col s12">
+                            SECONDS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row margin-bottom-0" style="padding-top: 30px;">
+                <div class="col s12 center font-medium red-text">
+                    <h5>TEMUKAN RATUSAN LOWKER MAGANG UNTUKMU DI SINI</h5>
+                </div>
+                <div class="col s12 center">
+                    <h4><a id="lamar" style="background-color: #ef3f49;" class="btn-large z-depth-0 disabled" href="https://creasi.co.id/jobboard" target="_blank">APPLY NOW!</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Luck prizes-->
+    <div id="luck" class="white scrollspy" style="padding: 50px 0; background: url('image/') repeat">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center font-medium merah-api">
+                    <h4>LUCKY DRAW</h4>
+                </div>
+                <div class="col s12 font-medium center">
+                    <p>Dapatkan kesempatan memenangkan hadiah voucher dengan total nilai lebih dari <b>Rp 4.000.000,-</b> yang akan diundi secara acak setiap minggunya oleh team creasi. </p>
+                </div>
+            </div>
+            <div class="row " style="padding-top: 20px">
+                <div class="col s12 font-medium center">
+                    <h5>Cara Ikutan Lucky Draw</h5>
+                </div>
+            </div>
+            <div class="row  font-medium">
+                <div class="col s6 m3 l3 center ">
+                    <img class="" src="image/follow.png" alt="" height="150px"/>
+                    <p>Follow Instagram @creasi_id</p>
+                </div>
+                <div class="col s6 m3 l3 center">
+                    <img class="" src="image/regram.png" alt="" height="150px" />
+                    <p>Regram postingan OMB di IG kamu  dan sertakan nama lengkap kamu di caption postingan</p>
+                </div>
+                <div class="col s6 m3 l3 center">
+                    <img class="" src="image/tag.png" alt="" height="150px"/>
+                    <p>Tag dan mention @creasi_id  beserta 5 teman kamu dan sertakan hashtag #CreasiOMB2017</p>
+                </div>
+                <div class="col s6 m3 l3 center">
+                    <img class="" src="image/private.png" alt="" height="150px"/>
+                    <p>Pastikan akun Instagram kamu tidak diprivate</p>
+                </div>
+            </div>            
+            <div class="row margin-bottom-0" style="padding-top: 20px">
+                <div class="col s12 center merah-api font-medium">
+                    <h4 style="-webkit-text-stroke: 0.5px white;">PRIZES</h4>
+                </div>
+            </div>
+            <div class="row font-light">
+                <div class="col s12 m6 l6">
+                    <img class="responsive-img" src="image/kado-copy.png" alt="" />
+                </div>
+<!--                <div class="col s12 m4 l4 font-medium margin-kanan-k50">
+                    <h5>Voucher</h5>
+                </div>-->
+                <div class="col s12 m4 l4 font-medium margin-kanan-k50">
+                    <p>5 Voucher Gramedia @200.000</p>
+                    <p>5 Voucher Tees @150.000</p>
+                    <p>5 Voucher Bli Bli @200.000</p>
+                    <p>5 Voucher MAP @200.000</p>
+                    <p>20 Voucheer Sepulsa @50.000</p>
+                </div>
+            </div>
+            
+            <div class="row valign-wrapper margin-bottom-0" style="padding-top: 20px;">
+                <div class="col s12 m6 l6 center font-medium">
+                    <h5>SPONSORED BY</h5>
+                    <a target="_blank" href="http://www.gramedia.com/"><img width="130px" src="image/gramedia.png" alt=""/></a>
+                    <a class="padding-k-10" target="_blank" href="https://tees.co.id/"><img width="130px" src="image/tees.png" alt="" /></a>
+                    <a class="padding-k-10" target="_blank" href="https://www.sepulsa.com/"><img width="140px" src="image/sepulsa.png" alt="" /></a>
+                </div>                
+                <div class="col s12 m6 l6 center font-medium">
+                    <h5>MEDIA PARTNERS</h5>
+                        <a target="_blank" href="http://karambaart.com/"><img width="90px" src="image/karamba.png" alt="" /></a>
+                        <a class="padding-k-10" target="_blank" href="http://www.infodkv.com/"><img  width="70px" src="image/info dkv.png" alt="" /></a>
+                        <a class="padding-k-10" target="_blank" href="http://dkv-daily.com/"><img  width="140px" src="image/dkv daily.png" alt="" /></a>
+                        <a class="padding-k-10" target="_blank" href="http://adgi.or.id/"><img  width="70px" src="image/adgi.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Tips-->
+    <div id="tips" class="parallax-container scrollspy" style="padding: 50px 0">
+        <div class="parallax">
+            <img src="image/slide-2 paralax.jpg" alt="" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 font-medium merah-api center">
+                    <h4>TIPS</h4>
+                </div>
+            </div>
+            <div class="row margin-bottom-0 font-medium">
+                <div class="col s12 m25 l25">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="" src="https://s3-ap-southeast-1.amazonaws.com/creasi/production/articles/172/LGYyoz52fP0zOhszjTFY8Z5xn95UFLnEh5wXZ.jpg" alt="" />
+                            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Read More" href="https://www.creasi.co.id/readings/172/pekerjaan-ini-cocok-buat-para-ekstrovert-cari-tahu-apa-saja-yang-termasuk"><i class="material-icons">library_books</i></a>
+                        </div>
+                        <div class="card-content ">
+                            <p>Pekerjaan ini Cocok buat para Ekstrovert. Cari Tahu Apa Saja yang Termasuk!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m25 l25" id="">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="" src="https://s3-ap-southeast-1.amazonaws.com/creasi/production/articles/171/K1WHGTwgPtitFvG4sf2gTO7eRGOqeq1k1EfWZ1rKDkU.jpg" alt="" />
+                            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Read More"  href="https://www.creasi.co.id/readings/171/inilah-5-perbedaan-utama-cv-dengan-portfolio-kamu-wajib-tahu"><i class="material-icons">library_books</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Inilah 5 Perbedaan Utama CV dengan Portfolio. Kamu Wajib Tahu!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m25 l25">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="" src="https://s3-ap-southeast-1.amazonaws.com/creasi/production/articles/170/ZX2YI92S40Qz3yLPZ1uDyq7hN7b1YIocLFQunQ5nxQlGK4SqwMfHAh6XutoqXFpXRD1KJCuw65OnnMEFZWhKl4XoDgweYrdrNbtf.jpg" alt="" />
+                            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Read More"  href="https://www.creasi.co.id/readings/170/apa-aja-hal-yang-harus-diperhatikan-sebelum-bertempur-mencari-kerja-via-portal-online"><i class="material-icons">library_books</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Apa Aja Hal yang Harus Diperhatikan Sebelum ‘Bertempur’ Mencari Kerja Via Portal Online?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m25 l25">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="" src="https://s3-ap-southeast-1.amazonaws.com/creasi/production/articles/169/1Z9BjSxLyGWJGnsffLzuSMNjy846xjzuGxR82K6Ky7IDqMCEiLJ52EOrdu3Csyz7CA07NBwBqR.jpg" alt="" />
+                            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Read More"  href="https://www.creasi.co.id/readings/169/kenapa-perusahaan-memerlukan-anak-magang-bidang-kreatif"><i class="material-icons">library_books</i></a>
+                        </div>
+                        <div class="card-content ">
+                            <p>Kenapa Perusahaan Memerlukan Anak Magang Bidang Kreatif?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m25 l25">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="" src="https://s3-ap-southeast-1.amazonaws.com/creasi/production/articles/168/Nw2rAO4YwEIEHN0lSCtMcG2fDdd6CWwpxUJflGgeG4klUZj.jpg" alt="" />
+                            <a class="btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Read More"  href="https://www.creasi.co.id/readings/168/ingin-beralih-jadi-freelancer-berikut-9-hal-yang-harus-kamu-perhatikan"><i class="material-icons">library_books</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Ingin Beralih Jadi Freelancer? Berikut 9 Hal yang Harus Kamu Perhatikan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Talent Seeker-->
+    <div class="white" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center font-medium merah-api">
+                    <h4>Talent Seeker</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center font-medium">
+                    <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB 
+                        berlangsung pada tanggal 1 – 31 Mei 2017. Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--creasi apps-->
+    <div id="apps" class="grey lighten-4 scrollspy" style="padding: 50px 0">
+        <div class="container">
+            <div class="row font-medium">
+                <div class="col s12 center merah-api ">
+                    <h4>CREASI APP</h4>
+                </div>
+                <div class="col s12 m4 l4">
+                    <img class="responsive-img" src="image/android-app.png" alt="" />
+                </div>
+                <div class="col s12 m8 l8 center" style="padding-bottom: 20px;">
+                    <h5>AVAILABLE ON PLAY STORE</h5>
+                </div>
+                <div class="col s12 m4 l4 center">
+                    <img height="100px" src="image/friendly.png" alt="" />
+                    <p><b>USER FRIENDLY</b></p>
+                    <p> Creasi - Android App dirancang untuk mempermudah kamu melamar pekerjaan</p>
+                </div>
+                <div class="col s12 m4 l4 center">
+                    <img height="100px" src="image/notif.png" alt="" />
+                    <p><b>LIVE NOTIFICATION</b></p>
+                    <p>Update terbaru dari Creasi akan dikirimkan langsung ke perangkat android kamu.</p>
+                </div>
+                <div class="col s12 m8 l8 center" style="padding-bottom: 20px;">
+                    <h5><a href="https://play.google.com/store/apps/details?id=id.co.creasi.android" target="_blank"><img height="75px" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="" /></a></h5>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Campus partner-->
+    <div class="white" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center merah-api font-medium">
+                    <h5>KAMPUS</h5>
+                </div>
+            </div>
+            <div class="row margin-bottom-0 ">
+                <div class="col s12 center font-medium">
+                    <a class="" href=""><img src="image/HMFSD UMN.png" alt="" width="75px" /></a>
+                    <a class="padding-k-10" href=""><img src="image/uph.png" alt="" width="50px" /></a>
+                    <a class="padding-k-10" href=""><img src="image/Logo-DKV-YAI.png" alt="" width="80px" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="page-footer"style="background:url('image/abstrak1.png')  top repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align font-medium">
+                    <H5>STAY UPDATED!</H5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a class="" target="_blank" href="https://www.facebook.com/creasi.id"><img class="hoverable circle" src="image/intagram_logo.png" alt="" height="30px"/></a>
+                    <a class="" target="_blank" href="https://twitter.com/creasi_id"><img class="hoverable circle" src="image/fb_logo.png" alt="" height="30px"/></a>
+                    <a class="" target="_blank" href="https://instagram.com/creasi_id"><img class="hoverable circle" src="image/twitter_logo.png" alt="" height="30px"/></a>   
+                    <a class="" target="_blank" href="https://www.youtube.com/channel/UC4oeowGuM-E3GTeuYFkAWZQ"><img class="hoverable circle" src="image/_youtube_logo.png" alt="" height="30px"/></a>                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align black-text">
+                © 2017 - <b>OMB</b> - All Rights Reserved - Crafted by <a class="black-text" href="thankgoditsmonday.id" tarwhite-textget="_blank"><b>TGIM</b></a>.
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="js/zopim.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/jquery.countup.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<script>
-    $(document).ready(function() {
-        $('.button-collapse').sideNav({
-            menuWidth: 400, // Default is 300
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
+  ga('create', 'UA-55386083-4', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+        $('.modal').modal({
+            dismissible: false
         });
+      
+        $('.owl-carousel').owlCarousel({
+            margin:20,
+            autoWidth:true,
+            items:4,
+            autoplay:300
+        });
+
+        $('.scrollspy').scrollSpy({
+            scrollOffset: 25
+        });
+        $('.counter').countUp();
+
+        $('.modal').modal({
+           dismissible: false
+        });
+    AOS.init({
+        duration: 1200,
+        easing: 'ease-in-sine'
     });
-</script>
+
+    $('.button-collapse').sideNav({
+        closeOnClick: true
+    });
+    
+    $('.parallax').parallax();
+    $('.collapsible').collapsible();
+    
+    $(window).on('scroll', function() {
+        $('#image-test').text($(window).scrollTop());
+    });
+  });
+    
+      
+  </script>  
 </body>
 </html>
