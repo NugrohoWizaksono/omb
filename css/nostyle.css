@@ -217,3 +217,40 @@ and open the template in the editor.
     -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
+
+.participant-item a{
+	min-height: 97px;
+	width: 100%;
+	display: inline-block;
+}
+
+.participant-item.uph{	
+ 	background: url('../image/kampus.png') 0 -2px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.hmf{	
+ 	background: url('../image/kampus.png') 0 -115px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.comrade{	
+ 	background: url('../image/kampus.png') 0 -210px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.kmup{	
+ 	background: url('../image/kampus.png') 0 -335px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.yai{	
+ 	background: url('../image/kampus.png') 0 -455px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.gundar{	
+ 	background: url('../image/kampus.png') 0 -555px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
