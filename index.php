@@ -50,33 +50,38 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     
     <!-- Modal Structure -->
     <div id="TS" class="modal">
-        <div class="modal-content font-medium center">
-            <a href="#!" class="modal-action modal-close black-text"><i class="material-icons right">clear</i></a>
-            <h4 class="red-text">Talent Seeker</h4><br />
-            <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB berlangsung pada tanggal 1 – 31 Mei 2017. 
-              Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
+        <div class="modal-content font-medium  center">
+            <a href="#!" class="modal-action modal-close black-text "><i class="material-icons right">clear</i></a>
+            <h4 class="red-text ">FREE JOB POST</h4><br />
+            <p>Bagi perusahaan (Talent Seeker) yang ingin memasang lowongan kerja magang secara GRATIS selama event OMB dari tanggal 1 – 31 Mei 2017, silakan hubungi Customer Relations Officer Creasi dengan: 
+                <br />
+            Reza di <b>021 – 2954 4802</b> atau <b>reza@creasi.co.id</b>
+
+            </p>
         </div>
     </div>
     <div class="navbar-fixed"> 
         <!--<nav style="background-color: rgba(0, 0, 5, 0.3) !important;">-->
         <nav>
             <div class="nav-wrapper white">
-                <div class="container"  id="navbar">
-                    <a href="#" class="brand-logo black-text font-mediumItalic"><img height="55px" src="image/logo [2].png" alt="" /></a>
-                    <a href="#" data-activates="mobile-menu" class="button-collapse">
-                        <i class="black-text material-icons">menu</i>
-                    </a>       
-                    <ul class="right hide-on-med-and-down center">
-                        <li><a href="#apaomb" class="black-text ">ABOUT</a></li>
-                        <li><a href="#steps" class="black-text">STEPS</a></li>
-                        <li><a href="#apply" class="black-text">APPLY</a></li>
-                        <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
-                        <li><a href="#tips" class="black-text">TIPS</a></li>
-                        <li><a href="#apps" class="black-text">APP</a></li>
-                        <li > <!-- Modal Trigger -->
-                            <a class="red" href="#TS">FREE JOB POST</a>
-                        </li>
-                    </ul>                        
+                <div class="container">
+                    <div id="navbar">
+                        <a href="#" class="brand-logo black-text font-mediumItalic"><img height="55px" src="image/logo [2].png" alt="" /></a>
+                        <a href="#" data-activates="mobile-menu" class="button-collapse">
+                            <i class="black-text material-icons">menu</i>
+                        </a>       
+                        <ul class="right hide-on-med-and-down center">
+                            <li><a href="#apaomb" class="black-text ">ABOUT</a></li>
+                            <li><a href="#steps" class="black-text">STEPS</a></li>
+                            <li><a href="#apply" class="black-text">APPLY</a></li>
+                            <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
+                            <li><a href="#tips" class="black-text">TIPS</a></li>
+                            <li><a href="#apps" class="black-text">APP</a></li>
+                            <li > <!-- Modal Trigger -->
+                                <a class="red" href="#TS">FREE JOB POST</a>
+                            </li>
+                        </ul>
+                    </div>                        
                 </div>
             </div>
         </nav>
@@ -626,15 +631,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     function onScroll(event){
         var scrollPos = $(document).scrollTop();
 
-        $('#navbar a').each(function () {
+        $('#navbar li a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('#navbar ul li').removeClass("active");
-                currLink.addClass("active");
+                $('#navbar ul li').removeClass("actived");
+                currLink.addClass("actived");
             }
             else{
-                currLink.removeClass("active");
+                currLink.removeClass("actived");
             }
         });
     }

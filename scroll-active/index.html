@@ -1,246 +1,296 @@
 <html>
-<head>
-<title>jQuery Active Menu</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-$(window).scroll(function(){
-        var window_top = $(window).scrollTop() + 12; 
-		// the "12" should equal the margin-top value for nav.stickydiv
-        var div_top = $('#checkdiv').offset().top;
-		if (window_top >= div_top) {
-                $('nav').addClass('stickydiv');
-            } else {
-                $('nav').removeClass('stickydiv');
+    <head>
+
+        <link rel="shortcut icon" href="image/logo [2].png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+
+        <!--    <link rel="stylesheet" href="css/flexboxgrid.css" />-->
+        <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta name="description" content="Creasi - Websitenya orang Kreatif mencari loker kerja : Creative Graphic Designer, Web Design, Visual Designer,  Desain Komunikasi Visual (DKV). " />
+        <meta property="og:title" content="Creasi Online Magang Berhadiah" />
+        <meta property="og:description" content="Online Job Fair khusus lowker magang dibidang kreatif" />
+        <meta property="og:url" content="http://omb.creasi.co.id/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://omb.creasi.co.id/image/slide-tranparan1.png" />
+        <title>Online Magang Berhadiah | Creasi.co.id</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    var window_top = $(window).scrollTop() + 12;
+                    // the "12" should equal the margin-top value for nav.stickydiv
+                    var div_top = $('#checkdiv').offset().top;
+                    if (window_top >= div_top) {
+                        $('nav').addClass('stickydiv');
+                    } else {
+                        $('nav').removeClass('stickydiv');
+                    }
+                });
+
+
+                $(document).on("scroll", onScroll);
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
+                    $(document).off("scroll");
+
+                    $('a').each(function () {
+                        $(this).removeClass('active');
+                    })
+                    $(this).addClass('active');
+
+                    var target = this.hash,
+                            menu = target;
+                    $target = $(target);
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top + 2
+                    }, 600, 'swing', function () {
+                        window.location.hash = target;
+                        $(document).on("scroll", onScroll);
+                    });
+                });
+            });
+
+            function onScroll(event) {
+                var scrollPos = $(document).scrollTop();
+
+                $('#sidebar a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('#sidebar ul li').removeClass("active");
+                        currLink.addClass("active");
+                    } else {
+                        currLink.removeClass("active");
+                    }
+                });
+                
+                $('#navbar li a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('#navbar ul li').removeClass("active");
+                        currLink.addClass("active");
+                    } else {
+                        currLink.removeClass("active");
+                    }
+                });
             }
-    });  
 
 
-  $(document).on("scroll", onScroll);
-    $('a[href^="#"]').on('click', function (e) {
-    	e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-		$target = $(target);
-       $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 600, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-});
-
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    
-	$('#sidebar a').each(function () {
-        var currLink = $(this);
-		var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#sidebar ul li').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
-
-
-</script>
-</head>
-<body>
-<div id="wrapper">
-	<header>
-		<div class="container">
-			<div id="logo">
-				<a href="http://www.instantshift.com"><img src="images/logo.png" /></a>
-			</div>
-			<div id="title">
-				<h1>Changing Active Menu Item on Page Scroll Using jQuery.</h1>
-			</div>
-		</div>
-	</header>
-
-<div id="maindiv">
-    <div class="container clear">
-        <div id="sidebar">
-            <div id="checkdiv"></div>
-            <nav class="">
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#webdesign">Web Design</a></li>
-                    <li><a href="#css">CSS</a></li>
-                    <li><a href="#tools">Tools</a></li>
-                    <li><a href="#tutorials">Tutorials</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="content">
-            <section id="home">
-                <h1>Home</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-            </section>
-            <section id="webdesign">
-                <h1>Web Design</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-            </section>
-            <section id="css">
-                <h1>CSS</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-            </section>
-            <section id="tools">
-                <h1>Tools</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-            </section>
-            <section id="tutorials">
-                <h1>Tutorials</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
+        </script>
+    </head>
+    <body>
+        <div class="navbar-fixed"> 
+        <!--<nav style="background-color: rgba(0, 0, 5, 0.3) !important;">-->
+        <nav>
+            <div class="nav-wrapper white">
+                <div class="container"  >
+                    <div id="navbar">
+                        <a href="#" class="brand-logo black-text font-mediumItalic"><img height="55px" src="image/logo [2].png" alt="" /></a>
+                        <a href="#" data-activates="mobile-menu" class="button-collapse">
+                            <i class="black-text material-icons">menu</i>
+                        </a>       
+                        <ul class="right hide-on-med-and-down center">
+                            <li><a href="#home">ABOUT</a></li>
+                            <li><a href="#steps" class="black-text">STEPS</a></li>
+                            <li><a href="#apply" class="black-text">APPLY</a></li>
+                            <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
+                            <li><a href="#tips" class="black-text">TIPS</a></li>
+                            <li><a href="#apps" class="black-text">APP</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <div id="wrapper">
+            <header>
+                <div class="container">
+                    <div id="logo">
+                        <a href="http://www.instantshift.com"><img src="images/logo.png" /></a>
+                    </div>
+                    <div id="title">
+                        <h1>Changing Active Menu Item on Page Scroll Using jQuery.</h1>
+                    </div>
+                </div>
+            </header>
             
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-				<p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                    tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                    quod mazim placerat facer possim assum.
-                </p>
-            </section>
+            <div id="maindiv">
+                <div class="container clear">
+                    <div id="sidebar">
+                        <div id="checkdiv"></div>
+                        <nav class="">
+                            <ul>
+                                <li><a href="#home" class="active">Home</a></li>
+                                <li><a href="#webdesign">Web Design</a></li>
+                                <li><a href="#css">CSS</a></li>
+                                <li><a href="#tools">Tools</a></li>
+                                <li><a href="#tutorials">Tutorials</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="content">
+                        <section id="home">
+                            <h1>Home</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                        </section>
+                        <section id="webdesign">
+                            <h1>Web Design</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                        </section>
+                        <section id="css">
+                            <h1>CSS</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                        </section>
+                        <section id="tools">
+                            <h1>Tools</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                        </section>
+                        <section id="tutorials">
+                            <h1>Tutorials</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+                                quod mazim placerat facer possim assum.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <p>Copyright ï¿½ 2008-2014 <a href="http://www.instantshift.com">InstantShift</a>. All rights reserved.</p>
+                </div>
+            </footer>
         </div>
-    </div>
-</div>
-<footer>
-    <div class="container">
-	<p>Copyright © 2008-2014 <a href="http://www.instantshift.com">InstantShift</a>. All rights reserved.</p>
-    </div>
-</footer>
-</div>
 </html>

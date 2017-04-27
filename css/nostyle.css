@@ -287,3 +287,6 @@ and open the template in the editor.
  	background-size: cover;
  	background-repeat: no-repeat;
 }
+li a .active{
+    border-bottom: 1px solid #f9922b;
+}

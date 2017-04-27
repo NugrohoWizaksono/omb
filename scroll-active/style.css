@@ -13,6 +13,9 @@ nav ul {list-style-type:none;margin:0;padding:0;}
 nav li {padding:5px 10px;}
 nav li a {color:#fff;font-weight:700;line-height: 25px;}
 a{text-decoration:none;}
-.active {color: #F99;text-decoration: none;}
+.active {color: #F99;text-decoration: none;
+    border-top: 3px solid red;}
 p{font-family:Verdana,Arial,Helvetica,sans-serif;}
 footer p{color:#fff;}
+li a .active{
+}
