@@ -259,3 +259,31 @@ and open the template in the editor.
  	background-size: cover;
  	background-repeat: no-repeat;
 }
+
+
+.participant-item.adgi{	
+ 	background: url('../image/media.png') 0 -1px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.karamba{	
+ 	background: url('../image/media.png') 0 -80px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.dkv{	
+ 	background: url('../image/media.png') 0 -165px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+.participant-item.infodkv{	
+ 	background: url('../image/media.png') 0 -245px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}
+
+.participant-item.line{	
+ 	background: url('../image/media.png') 0 -345px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}

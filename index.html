@@ -59,15 +59,15 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </div>
     <div class="navbar-fixed"> 
         <!--<nav style="background-color: rgba(0, 0, 5, 0.3) !important;">-->
-        <nav id="narbar">
+        <nav>
             <div class="nav-wrapper white">
-                <div class="container">
+                <div class="container"  id="navbar">
                     <a href="#" class="brand-logo black-text font-mediumItalic"><img height="55px" src="image/logo [2].png" alt="" /></a>
                     <a href="#" data-activates="mobile-menu" class="button-collapse">
                         <i class="black-text material-icons">menu</i>
                     </a>       
                     <ul class="right hide-on-med-and-down center">
-                        <li class="active"><a href="#apaomb" class="black-text ">ABOUT</a></li>
+                        <li><a href="#apaomb" class="black-text ">ABOUT</a></li>
                         <li><a href="#steps" class="black-text">STEPS</a></li>
                         <li><a href="#apply" class="black-text">APPLY</a></li>
                         <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
@@ -347,7 +347,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     <div class="grey lighten-4" style="padding: 100px 0; background: url('image/pattern.png') top repeat">
         <div class="container">
             
-            <div class="row valign-wrapper" style="padding: 30px 0;">
+            <div class="row" style="padding: 30px 0;">
                 <div class="col s12 m6 l6 center font-medium">
                     <h5>SPONSORED BY</h5>
                     <a target="_blank" href="http://www.gramedia.com/"><img width="130px" src="image/gramedia.png" alt=""/></a>
@@ -356,10 +356,34 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 </div>                
                 <div class="col s12 m6 l6 center font-medium">
                     <h5>MEDIA PARTNERS</h5>
-                        <a target="_blank" href="http://karambaart.com/"><img width="90px" src="image/karamba.png" alt="" /></a>
-                        <a class="padding-k-10" target="_blank" href="http://www.infodkv.com/"><img  width="70px" src="image/info dkv.png" alt="" /></a>
-                        <a class="padding-k-10" target="_blank" href="http://dkv-daily.com/"><img  width="140px" src="image/dkv daily.png" alt="" /></a>
-                        <a class="padding-k-10" target="_blank" href="http://adgi.or.id/"><img  width="70px" src="image/adgi.png" alt="" /></a>
+                        
+                    <div class="owl-carousel center">
+                        <div class="item" style="width: 100px">
+                            <div class="participant-item adgi">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 100px">
+                            <div class="participant-item karamba">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 100px">
+                            <div class="participant-item dkv">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 100px">
+                            <div class="participant-item infodkv">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 100px">
+                            <div class="participant-item line">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -568,8 +592,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         $('.owl-carousel').owlCarousel({
             margin:10,
             autoWidth:true,
-            items:8,
-            autoplay:300
+            items:3,
+            loop:true,
+            autoplay:true
         });
 
         $('.scrollspy').scrollSpy({
