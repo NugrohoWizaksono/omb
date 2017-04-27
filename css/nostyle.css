@@ -254,3 +254,8 @@ and open the template in the editor.
  	background-size: cover;
  	background-repeat: no-repeat;
 }
+.participant-item.unibi{	
+ 	background: url('../image/kampus.png') 0 -655px;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+}

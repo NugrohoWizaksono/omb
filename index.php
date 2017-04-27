@@ -1,17 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-<!--    Start of Zendesk Chat Script-->
-
-    <script type="text/javascript">
-    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-    $.src="https://v2.zopim.com/?4et46ad01OVgpd3U2fAtgqc7BDNDkU1S";z.t=+new Date;$.
-    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-    </script>
-    
-    <!--End of Zendesk Chat Script-->
+<!--Start of Zendesk Chat Script-->
+<!--<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?4lbXBe1Mmevh4VU4PTXGkkKparnHylye";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>-->
+<!--End of Zendesk Chat Script-->
     
     
     <meta charset="UTF-8" />
@@ -47,23 +45,21 @@
         <li><a href="#luck" style="font-size: 20px; padding-left: 30px;">LUCKY PRIZES</a></li>
         <li><a href="#tips" style="font-size: 20px; padding-left: 30px;">TIPS</a></li>
         <li><a href="#apps" style="font-size: 20px; padding-left: 30px;">APP</a></li>        
-        <li><a href="#TS" style="font-size: 20px; padding-left: 30px;">Talent Seeker</a></li>
+        <li><a href="#TS" style="font-size: 20px; padding-left: 30px;">FREE JOB POST</a></li>
     </ul>
     
     <!-- Modal Structure -->
     <div id="TS" class="modal">
         <div class="modal-content font-medium center">
+            <a href="#!" class="modal-action modal-close black-text"><i class="material-icons right">clear</i></a>
             <h4 class="red-text">Talent Seeker</h4><br />
             <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB berlangsung pada tanggal 1 – 31 Mei 2017. 
               Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat black-text">Close</a>
-        </div>
     </div>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed"> 
         <!--<nav style="background-color: rgba(0, 0, 5, 0.3) !important;">-->
-        <nav>
+        <nav id="narbar">
             <div class="nav-wrapper white">
                 <div class="container">
                     <a href="#" class="brand-logo black-text font-mediumItalic"><img height="55px" src="image/logo [2].png" alt="" /></a>
@@ -71,14 +67,14 @@
                         <i class="black-text material-icons">menu</i>
                     </a>       
                     <ul class="right hide-on-med-and-down center">
-                        <li><a href="#apaomb" class="black-text">ABOUT</a></li>
+                        <li class="active"><a href="#apaomb" class="black-text ">ABOUT</a></li>
                         <li><a href="#steps" class="black-text">STEPS</a></li>
                         <li><a href="#apply" class="black-text">APPLY</a></li>
                         <li><a href="#luck" class="black-text">LUCKY DRAW</a></li>
                         <li><a href="#tips" class="black-text">TIPS</a></li>
                         <li><a href="#apps" class="black-text">APP</a></li>
                         <li > <!-- Modal Trigger -->
-                            <a class="red" href="#TS">Talent Seeker</a>
+                            <a class="red" href="#TS">FREE JOB POST</a>
                         </li>
                     </ul>                        
                 </div>
@@ -153,8 +149,7 @@
         </div>
     </div>
     <!--goals-->
-    <div id="goals" class="parallax-container scrollspy" style="padding: 80px 0">
-        <div class="parallax grey lighten-5"><img  src="image/paralax1.jpg" alt=""/></div>
+    <div id="goals" class="scrollspy" style="padding: 100px 0; background: url('image/pattern.png') top repeat">
         <div class="container">
 <!--            <div class="row">
                 <div class="col s12 center font-mediumItalic red-text">
@@ -215,7 +210,7 @@
                 <div class="col s12 m4 l4 center" style="" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="2000">
                     <h5>3</h5>
                     <img class="" src="image/JOB.png" alt=""  height="250px"/>
-                    <p>Lamar lowker magang yang bertanda OMB di www.creasi.co.id/jobboard</p>
+                    <p>Lamar lowker magang yang bertanda OMB di <a href="https://www.creasi.co.id/jobboard" class="merah-api" target="_blank">www.creasi.co.id/jobboard</a></p>
                 </div>
 <!--                <div class="col s6 m4 l4 offset-l2 offset-m2 center" style="padding-top: 30px;" data-aos="fade-out" data-aos-offset="120" data-aos-easing="ease-in-out-sine" data-aos-duration="300">
                     <img class="" src="image/tunggu-interview.png" alt="" height="150px" /><br />
@@ -328,7 +323,7 @@
             </div>            
             <div class="row margin-bottom-0" style="padding-top: 20px">
                 <div class="col s12 center merah-api font-medium">
-                    <h4 style="-webkit-text-stroke: 0.5px white;">PRIZES</h4>
+                    <h4>PRIZES</h4>
                 </div>
             </div>
             <div class="row font-light">
@@ -346,8 +341,13 @@
                     <p>20 Voucheer Sepulsa @50.000</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <!--Campus partner-->
+    <div class="grey lighten-4" style="padding: 100px 0; background: url('image/pattern.png') top repeat">
+        <div class="container">
             
-            <div class="row valign-wrapper margin-bottom-0" style="padding-top: 20px;">
+            <div class="row valign-wrapper" style="padding: 30px 0;">
                 <div class="col s12 m6 l6 center font-medium">
                     <h5>SPONSORED BY</h5>
                     <a target="_blank" href="http://www.gramedia.com/"><img width="130px" src="image/gramedia.png" alt=""/></a>
@@ -360,6 +360,53 @@
                         <a class="padding-k-10" target="_blank" href="http://www.infodkv.com/"><img  width="70px" src="image/info dkv.png" alt="" /></a>
                         <a class="padding-k-10" target="_blank" href="http://dkv-daily.com/"><img  width="140px" src="image/dkv daily.png" alt="" /></a>
                         <a class="padding-k-10" target="_blank" href="http://adgi.or.id/"><img  width="70px" src="image/adgi.png" alt="" /></a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12 center font-medium">
+                    <h5>SUPPORTED BY</h5>
+                </div>
+            </div>
+            <div class="row margin-bottom-0 ">
+                <div class="col s12 center font-medium">
+                    <div class="owl-carousel center">
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item uph">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item hmf">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item comrade">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item kmup">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item yai">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item gundar">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="item" style="width: 130px">
+                            <div class="participant-item unibi">
+                                <a href=""> &nbsp;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -434,23 +481,6 @@
             </div>
         </div>
     </div>
-    <!--Talent Seeker-->
-    <div class="white" style="padding: 50px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 center font-medium merah-api">
-                    <h4>Talent Seeker</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 center font-medium">
-                    <p>Iklan lowker khusus magang gratis untuk Talent Seeker yang berpartisipasi selama event OMB 
-                        berlangsung pada tanggal 1 – 31 Mei 2017. Informasi lebih lanjut, hubungi 021-2954-4802 reza@creasi.co.id</p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
     <!--creasi apps-->
     <div id="apps" class="grey lighten-4 scrollspy" style="padding: 50px 0">
         <div class="container">
@@ -481,58 +511,12 @@
             </div>
         </div>
     </div>
-    <!--Campus partner-->
-    <div class="white" style="padding: 50px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 center merah-api font-medium">
-                    <h5>KAMPUS</h5>
-                </div>
-            </div>
-            <div class="row margin-bottom-0 ">
-                <div class="col s12 center font-medium">
-                    <div class="owl-carousel center">
-                        <div class="item" style="width: 130px">
-                            <div class="participant-item uph">
-                                <a href=""> &nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="item" style="width: 130px">
-                            <div class="participant-item hmf">
-                                <a href=""> &nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="item" style="width: 130px">
-                            <div class="participant-item comrade">
-                                <a href=""> &nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="item" style="width: 130px">
-                            <div class="participant-item kmup">
-                                <a href=""> &nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="item" style="width: 130px">
-                            <div class="participant-item yai">
-                                <a href=""> &nbsp;</a>
-                            </div>
-                        </div>
-                        <div class="item" style="width: 130px">
-                            <div class="participant-item gundar">
-                                <a href=""> &nbsp;</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--footer-->
-    <footer class="page-footer"style="background:url('image/abstrak1.png')  top repeat;">
+    <footer class="page-footer"style="background:url('image/abstrak.png')  top repeat;">
         <div class="container">
             <div class="row">
                 <div class="col s12 center-align font-medium">
-                    <H5>STAY UPDATED!</H5>
+                    <h5>STAY UPDATED!</h5>
                 </div>
             </div>
             <div class="row">
@@ -541,6 +525,12 @@
                     <a class="" target="_blank" href="https://twitter.com/creasi_id"><img class="hoverable circle" src="image/fb_logo.png" alt="" height="30px"/></a>
                     <a class="" target="_blank" href="https://instagram.com/creasi_id"><img class="hoverable circle" src="image/twitter_logo.png" alt="" height="30px"/></a>   
                     <a class="" target="_blank" href="https://www.youtube.com/channel/UC4oeowGuM-E3GTeuYFkAWZQ"><img class="hoverable circle" src="image/_youtube_logo.png" alt="" height="30px"/></a>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center">
+                    <p>ORGANIZED BY</p>
+                    <img src="image/LOGO-700PX.png" alt=""  width="100px"/>
                 </div>
             </div>
         </div>
@@ -560,13 +550,13 @@
   <script src="js/jquery.countup.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-55386083-4', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-55386083-4', 'auto');
+        ga('send', 'pageview');
 
   </script>
   <script type="text/javascript">
@@ -605,6 +595,25 @@
     $(window).on('scroll', function() {
         $('#image-test').text($(window).scrollTop());
     });
+    
+    
+    
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+
+        $('#navbar a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#navbar ul li').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+
   });
     
       
