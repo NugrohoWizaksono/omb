@@ -16,7 +16,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     <link rel="shortcut icon" href="image/logo [2].png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     
 <!--    <link rel="stylesheet" href="css/flexboxgrid.css" />-->
