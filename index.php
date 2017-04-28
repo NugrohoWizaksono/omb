@@ -50,10 +50,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     
     <!-- Modal Structure -->
     <div id="TS" class="modal">
-        <div class="modal-content font-medium  center">
+        <div class="modal-content font-medium  center" style="background: url('image/pattern.png') top repeat">
             <a href="#!" class="modal-action modal-close black-text "><i class="material-icons right">clear</i></a>
             <h4 class="red-text ">FREE JOB POST</h4><br />
-            <p>Bagi perusahaan (Talent Seeker) yang ingin memasang lowongan kerja magang secara GRATIS selama event OMB dari tanggal 1 – 31 Mei 2017, silakan hubungi Customer Relations Officer Creasi dengan: 
+            <p>Bagi perusahaan (Talent Seeker) yang ingin memasang lowongan kerja magang secara GRATIS selama event OMB dari tanggal 1 – 31 Mei 2017, silakan hubungi Customer Relations Officer kami dengan: 
                 <br />
             Reza di <b>021 – 2954 4802</b> atau <b>reza@creasi.co.id</b>
 
@@ -93,46 +93,6 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 <img class="responsive-img bD" src="image/slide-tranparan.png" alt="" />
                 <img class="responsive-img bM" src="image/slide mobile.JPG" alt="" />           
             </div>
-<!--            <div class="col s12 m12 l12 center">
-                <img class="responsive-img" src="slider/creasi.png" alt="" />
-            </div>
-            <div class="col s12 m12 l12 center margin-top-k90">
-                <img class="responsive-img" src="slider/logo omb.png" alt="" />
-            </div>            
-            <div class="col s12 m12 l12 center margin-top-k60">
-                <img class="responsive-img" src="slider/online jobfair khusus magang.png" alt="" />
-            </div>             
-            <div class="col s12 m12 l12 margin-top-k350">
-                <div class="col s4 m6 l6 left-align offset-s1">
-                    <div class="col s12">
-                        <img class="responsive-img" src="slider/khusus untuk mahasiswa.png" alt="" />
-                    </div>
-                </div>
-                <div class="col s4 m6 l6 right-align offset-s1">
-                    <div class="col s12">
-                        <img class="responsive-img" src="slider/periode.png" alt="" />
-                    </div>
-                </div>            
-                <div class="col s12 m12 l12 center margin-top-k60">
-                    <img class="responsive-img" src="slider/dan menangkan total hadiah.png" alt="" />
-                </div>
-                <div class="col s4 m6 l6 left-align offset-s1">
-                    <div class="col s12 margin-top-k100">
-                        <img class="responsive-img" src="slider/bori.png" alt="" />
-                    </div>
-                </div>   
-                <div class="col s4 m6 l6 right-align offset-s1">
-                    <div class="col s12 margin-top-k100">
-                        <img class="responsive-img" src="slider/dea.png" alt="" />
-                    </div>    
-                </div>
-            </div>
-            <div class="col s12 margin-top-k60 left-align">
-                <img class="responsive-img" src="slider/sponsor.png" alt="" />
-            </div>      
-            <div class="col s12 margin-top-k60 right-align">
-                <img class="responsive-img" src="slider/sosmed.png" alt="" />
-            </div>-->
         </div>        
     </div>
     <!--apa omb-->
@@ -365,22 +325,22 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                     <div class="owl-carousel center">
                         <div class="item" style="width: 100px">
                             <div class="participant-item adgi">
-                                <a href=""> &nbsp;</a>
+                                <a href="http://adgi.or.id/"> &nbsp;</a>
                             </div>
                         </div>
                         <div class="item" style="width: 100px">
                             <div class="participant-item karamba">
-                                <a href=""> &nbsp;</a>
+                                <a href="http://karambaart.com/"> &nbsp;</a>
                             </div>
                         </div>
                         <div class="item" style="width: 100px">
                             <div class="participant-item dkv">
-                                <a href=""> &nbsp;</a>
+                                <a href="http://dkv-daily.com/"> &nbsp;</a>
                             </div>
                         </div>
                         <div class="item" style="width: 100px">
                             <div class="participant-item infodkv">
-                                <a href=""> &nbsp;</a>
+                                <a href="http://www.infodkv.com/"> &nbsp;</a>
                             </div>
                         </div>
                         <div class="item" style="width: 100px">
@@ -441,10 +401,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         </div>
     </div>
     <!--Tips-->
-    <div id="tips" class="parallax-container scrollspy" style="padding: 50px 0">
-        <div class="parallax">
-            <img src="image/slide-2 paralax.jpg" alt="" />
-        </div>
+    <div id="tips" class="white scrollspy" style="padding: 50px 0">
         <div class="container">
             <div class="row">
                 <div class="col s12 font-medium merah-api center">
@@ -598,8 +555,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
             margin:10,
             autoWidth:true,
             items:3,
-            loop:true,
-            autoplay:true
+            autoplay:true,
+            rewind:true,
+            rewindSpeed:2000
         });
 
         $('.scrollspy').scrollSpy({
